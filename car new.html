@@ -1,0 +1,80 @@
+<html>
+  <head>
+     <script>
+	    var i=0;
+	 function disp()
+	 {
+	   var cars=new Array("cars/2.jpg","cars/3.jpg","cars/4.jpg","cars/5.jpg","cars/1.jpg");
+	    document.image.src=cars[i];
+		
+		if(i==1)
+		{
+		document.getElementById("data1").innerHTML="Sample example  UI developer";
+		document.getElementById("data2").innerHTML="Its a car show in sanfranscio near fremont village";
+		}
+		if(i==0)
+		{
+		document.getElementById("data1").innerHTML="Sample example .NET developer";
+		document.getElementById("data2").innerHTML="Its a car show in sanfranscio near Milipitas village";
+		}
+		if(i==2)
+		{
+		document.getElementById("data1").innerHTML="Sample example .JAVA developer";
+		document.getElementById("data2").innerHTML="Its a car show in sanfranscio near Santa Clara village";
+		}
+		if(i==3)
+		{
+		document.getElementById("data1").innerHTML="Sample example .DEV OPS developer";
+		document.getElementById("data2").innerHTML="Its a car show in sanfranscio near San Jose village";
+		}
+		if(i==4)
+		{
+		document.getElementById("data1").innerHTML="Sample example .HADOOP developer";
+		document.getElementById("data2").innerHTML="Its a car show in sanfranscio near Sunny Vally village";
+		}
+		
+		i++;
+		if(i>=cars.length)
+		{
+		i=0;
+		}
+	 }
+	setInterval("disp()",2000);
+	 
+	 </script>
+	     <style>
+		   *{
+		   margin:0px;padding:0px;
+		   }
+		   #slider{
+		   width:1000px;height:400px;background:#fdfdff;margin:0px auto;
+		   }
+		   #slider img{
+		   width:800px;height:400px;
+		   }
+		   #data1{
+		   position:relative;
+               ative;top:-230px;font-size:45px;left:40px;
+		   text-shadow: 0px 0px 15px black;color:white;
+		   }
+		   #data2{
+		    position:relative;top:-210px;font-size:30px;left:40px;text-shadow: 0px 0px 15px black;color:white;
+		   }
+		   }
+		 </style>
+	 
+  </head>
+       <body>
+          <div id="slider">
+		      <img src="cars/1.jpg" name="image">
+			  <h1 id="data1">Sample example  UI developer</h1>
+			  <p id="data2">Its a car show in sanfranscio near fremont village</p>
+		  
+		  </div>	   
+	   
+	   </body>
+
+
+
+
+</html>
